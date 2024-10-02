@@ -20,8 +20,6 @@ def delete(task_name):
      try:
           with open('tasks.txt', 'r') as file:
                lines = file.readlines()
-               if task_name not in lines:
-                    print("")
 
           with open('tasks.txt', 'w') as file:
                for line in lines:
