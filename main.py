@@ -1,10 +1,14 @@
 import os
+import platform
 import functions
 
 while True:
-     os.system('cls')
+     if platform.system() == 'Windows':
+          os.system('cls')
+     else:
+          os.system('clear')
+          
      print("========== To-Do List ==========")
-
      print("\n1. Show all tasks")
      print("2. Add a task")
      print("3. Delete a task")
@@ -25,7 +29,7 @@ while True:
                functions.show()
 
                choice = input("\nEnter 'r' to return to the main menu: ")
-               while choice != 'r'and choice != 'R' :
+               while choice.lower() != 'r':
                     print("Wrong entry. Please enter a valid letter(r-R).")
                     choice = input("\nEnter 'r' to return to the main menu: ")
                continue
