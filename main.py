@@ -20,7 +20,10 @@ while True:
           print("Wrong entry. Please enter a valid name(1 to 5).")
           choice = int(input("\nEnter your choice: "))
 
-     os.system('cls')
+     if platform.system() == 'Windows':
+          os.system('cls')
+     else:
+          os.system('clear')
 
      match choice:
           case 1:
@@ -112,11 +115,4 @@ while True:
                continue
 
           case 5:
-              exit() 
-
-
-
-
-
-
-               
+              exit()            

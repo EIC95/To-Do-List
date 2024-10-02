@@ -13,7 +13,6 @@ This is a simple command-line To-Do List application implemented in Python. The 
 ## Requirements
 
 - Python 3.x
-- Operating System: Windows (for `os.system('cls')`)
 
 ## Installation
 
