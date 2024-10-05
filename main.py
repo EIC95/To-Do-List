@@ -15,10 +15,14 @@ while True:
      print("4. Mark a task as done")
      print("5. Exit the app")
 
-     choice = int(input("\nEnter your choice: "))
-     while choice < 1 or choice > 6 :
-          print("Wrong entry. Please enter a valid name(1 to 5).")
-          choice = int(input("\nEnter your choice: "))
+     while True:
+          try:
+               choice = int(input("\nEnter your choice: "))
+               if choice in range(1, 6):
+                    break
+               print("Wrong entry. Please enter a valid number (1 to 5)")
+          except ValueError:
+               print("Wrong entry. Please enter a valid number (1 to 5)")
 
      if platform.system() == 'Windows':
           os.system('cls')
