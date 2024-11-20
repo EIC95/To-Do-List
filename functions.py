@@ -8,13 +8,13 @@ def show():
                if content == "":
                     print("You have no tasks in progress. Please add one.")
                else:
-                    print(content)
+                    print(content, end="\n")
      except:
           print("You have no tasks in progress. Please add one.")
 
 def add(task_name):
      with open('tasks.txt' , 'a') as file:
-          file.write(task_name)
+          file.write(task_name + '\n')
 
 def delete(task_name):
      try:
