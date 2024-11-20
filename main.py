@@ -113,7 +113,7 @@ while True:
                     print("Task marked successfully.")
 
                choice = input("\nEnter 'r' to return to the main menu: ")
-               while choice != 'r'and choice != 'R' :
+               while choice.lower() != 'r':
                     print("Wrong entry. Please enter a valid letter(r-R).")
                     choice = input("\nEnter 'r' to return to the main menu: ")
                continue
