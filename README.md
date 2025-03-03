@@ -49,6 +49,6 @@ When you start the application, you'll see a menu similar to this:
 
 You can then select an option by entering the corresponding number.
 
-## Contributing
+## License  
 
-Contributions are welcome! If you have suggestions or improvements, feel free to create a pull request or open an issue.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
